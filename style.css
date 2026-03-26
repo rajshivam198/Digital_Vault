@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: radial-gradient(circle at top, #0f2027, #000000);
+    color: #00ffcc;
+}
+
+/* Center container */
+.container {
+    text-align: center;
+    margin-top: 120px;
+}
+
+/* Title */
+h1 {
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+/* Glass effect box */
+.vault-box {
+    margin: 30px auto;
+    padding: 30px;
+    width: 320px;
+    background: rgba(0, 255, 204, 0.05);
+    border: 1px solid #00ffcc;
+    border-radius: 12px;
+    box-shadow: 0 0 20px #00ffcc;
+}
+
+/* Buttons */
+button, .logout-btn {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background: #00ffcc;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+button:hover, .logout-btn:hover {
+    background: #00ffaa;
+}
+
+/* Input fields */
+input {
+    display: block;
+    margin: 10px auto;
+    padding: 12px;
+    width: 240px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+
+/* Neon glow animation */
+@keyframes glow {
+    0% { box-shadow: 0 0 5px #00ffcc; }
+    50% { box-shadow: 0 0 20px #00ffcc; }
+    100% { box-shadow: 0 0 5px #00ffcc; }
+}
+
+.vault-box {
+    animation: glow 2s infinite;
+}

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vault Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>VAULT UNLOCKED</h1>
+    <p>Welcome, <strong>{{ user }}</strong></p>
+
+    <div class="vault-box">
+        <h3>Secure Access Granted</h3>
+        <p>Status: <span style="color:lime;">ACTIVE</span></p>
+        <p>Encryption Level: AES-256</p>
+    </div>
+
+    <a href="/logout" class="logout-btn">Logout</a>
+</div>
+
+</body>
+</html>

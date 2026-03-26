@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vault Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>DIGITAL VAULT</h1>
+    <p>Authorized Access Only</p>
+
+    <form method="POST">
+        {% csrf_token %}
+        <input type="text" name="username" placeholder="Enter Username">
+        <input type="password" name="password" placeholder="Enter Password">
+        <button type="submit">Unlock Vault</button>
+    </form>
+</div>
+
+</body>
+</html>
